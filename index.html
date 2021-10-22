@@ -35,10 +35,17 @@ font-style: bold;
 }
 
 #journal{
-	background-image: url(https://cdn.shopify.com/s/files/1/0903/2160/products/black-leather-executive-journal-2_1024x1024.jpg?v=1618913301);
-background-size: cover;
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5dd1a3e194e7d2435fbffbea/1579205859830-KLH8BU2179UOXNM0IPGS/ACS_0093.jpg);
+background-size: 120%;
 background-position: center;
 
+
+
+}
+#journal:hover{
+
+background-size: 250%;
+transition: 3s;
 }
 
 #projects{
@@ -47,11 +54,118 @@ background-position: center;
 	background-position: center;
 
 }
+#projects:hover{
+
+background-size: 250%;
+transition: 3s;
+}
 
 #aboutme{
 
 	top: 250px;
+	background-image: url(me.jpeg);
+	background-position:center;
+	background-size: 120%;
 }
+#aboutme:hover{
+	background-size: 250%;
+	transition:3s;
+}
+
+#tennisball{
+	width: 100px;
+	height: 100px;
+	background-image: url(https://lh3.googleusercontent.com/proxy/uVfzJ-v3I1HyQD_ks8DFsXqz9_vf4cJYcfWExjcKJhRQpNOhNC9hJ6FxVLcZh7FdII8CjbLj8hUVNbfjqXIjlOVP);
+	position: absolute;
+	background-size: cover;
+	animation-name: tennisball;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes tennisball{
+
+0%{
+	top: 400px;
+	left: 30%;
+	transform: rotate(0deg);
+}
+
+16%{
+	top: 575px;
+	left: 30%;
+	transform:rotate(90deg);
+
+}
+
+32%{
+	top: 575px;
+	left: 60%;
+	transform: rotate(180deg);
+}
+
+48%{
+
+	top: 400px;
+	left: 60%;
+	transform: rotate(270deg);
+}
+
+64%{
+
+	top: 575px;
+	left: 60%;
+	transform: rotate(180deg);
+}
+80%{
+	top: 575px;
+	left: 30%;
+	transform:rotate(90deg);
+}
+100%{
+	top: 400px;
+	left: 30%;
+	transform: rotate(0deg);
+}
+
+}
+
+#soccerball{
+	width: 150px;
+	height: 150px;
+	background-image: url(https://illustoon.com/photo/dl/4592.png);
+	position: absolute;
+	background-size: cover;
+	animation-name: soccerball;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	top: 650px;
+
+}
+
+@keyframes soccerball{
+
+0%{
+	left:-10%;
+	transform: rotate(0deg);
+}
+
+
+50%{
+	left: 100%;
+	transform: rotate(720deg);
+}
+
+
+100%{
+
+	left: -10%;
+	transform: rotate(0deg);
+}
+
+}
+
 
 </style>
 	<title>
@@ -73,6 +187,10 @@ background-position: center;
 <a href="aboutme.html"><div class="links" id="aboutme"></div></a>
 
 <a href="projects.html"><div class="links" id="projects"></div></a>
+
+
+<div id="tennisball"></div>
+<div id="soccerball"></div>
 
 
 

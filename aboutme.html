@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@700&display=swap" rel="stylesheet">
 
-	
+
 <style type="text/css">
 	
 
@@ -30,6 +30,72 @@ body{
 	text-decoration: none;
 
 }
+#mainpage{
+
+	font-size: 20px;
+}
+#academic{
+	background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/paideiainstitute/pages/980/attachments/original/1501518520/Logo_Dalton.jpg?1501518520);
+	background-position: center;
+	background-size: cover;
+}
+#athletic{
+	background-image: url(https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001-b5fb3d8d8469ab744d9e97706fa67bc5c0e4fa40.jpg);
+	background-size: 125%;
+	background-position: center;
+}
+#social{
+	background-image: url(https://lh3.googleusercontent.com/proxy/tHeGr6iQwTd5VQo8L7jaAV8eiH0IpAiZBuGdIzBMEDryDFtUbRuPOK2i830H6hIVSrKgm-n-UTbvNzq-vQnsrXqLCg4H5HkE1xRDY95ac9HPM71rOkyftZDPm93ZJ78);
+	background-position: center;
+	background-size: 190%;
+}
+#personal{
+	background-image: url(https://ih1.redbubble.net/image.198743416.4953/fpp,small,lustre,wall_texture,product,750x1000.u2.jpg);
+	background-position: center;
+	background-size: 120%;
+}
+
+.links{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	position:relative;
+	display:inline-block;
+	}
+#partyppl{
+	width: 150px;
+	height: 150px;
+	background-image: url();
+	position: absolute;
+	background-size: cover;
+	animation-name: partyppl;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	top: 650px;
+
+}
+
+@keyframes partyppl{
+
+0%{
+	left:-10%;
+	transform: rotate(0deg);
+}
+
+
+50%{
+	left: 100%;
+	transform: rotate(720deg);
+}
+
+
+100%{
+
+	left: -10%;
+	transform: rotate(0deg);
+}
+
+}
 
 
 </style>
@@ -43,6 +109,29 @@ body{
 
 <center><div id="aboutmetitle">About me
 </div></center>
+<br>
+<br>
+<center><div id="mainpage">Hey, I'm Avi Gulati, the creator of this website. Click on a box to learn more about the difference aspects of my life that shape who I am. </center></div>
+
+<center>
+<a href="academic.html"><div class="links" id="academic"></div></a>
+<a href="social.html"><div class="links" id="social"></div></a>
+<a href="athletic.html"><div class="links" id="athletic"></div></a>
+<a href="personal.html"><div class="links" id="personal"></div></a>
+</center>
+
+<div id="partyppl"></div>
 
 </body>
+
+
+
+
+
+
 </html>
+
+
+
+
+
