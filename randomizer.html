@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	
+<style type="text/css">
+	
+#square{
+
+	width: 600px;
+	height: 600px;
+
+}
+
+#projecthome{
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+
+}
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+<a id="projecthome" href="projects.html">Projects</a>
+<center><div id="square"></div></center>
+<script type="text/javascript">
+
+	var randomNumber1 = Math.round(Math.random()*255);
+	var randomNumber2 = Math.round(Math.random()*255);
+	var randomNumber3 = Math.round(Math.random()*255);
+
+	console.log(randomNumber1, randomNumber2, randomNumber3);
+	
+var box = document.getElementById("square");
+
+function randomizer(input) {
+
+	box.innerText = input;
+	box.style.backgroundColor = "rgb(" + randomNumber1 + "," + randomNumber2 + "," + randomNumber3 + ")";
+}
+
+randomizer("")
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
