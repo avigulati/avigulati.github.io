@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+<script type="text/javascript">
+
+	function makeDinosaur (){
+		var dinosaur = document.createElement("div")
+		document.body.appendChild(dinosaur)
+	
+		dinosaur.style.height = "200px";
+		dinosaur.style.width = "200px";
+		dinosaur.style.background = "url(dino.png)";
+		dinosaur.style.backgroundSize = "cover";
+		
+	
+
+	dinosaur.addEventListener("click", function(){
+dinosaur.style.background = "url(asteroid.png)"
+
+	
+
+	
+	})
+
+
+}
+
+
+
+	setInterval(makeDinosaur, 750)
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

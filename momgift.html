@@ -42,30 +42,60 @@ font-family: 'Stick No Bills', sans-serif;
 	font-size: 20px;
 }
 #yosemite{
-	position: relative;
 	top:55%;
 	left: 9%;
+}
+
+
+#yellowstone{
+	top: 20%;
+	left: 21%
+}
+
+#zion{
+	top: 50%;
+	left: 16%;
+}
+
+#glacier{
+	top: 1%;
+	left: 13%;
+}
+
+#glacier:hover{
+
+}
+
+#canyon{
+	top: 55%;
+	left: 16%;
+}
+
+#everglades{
+	top:94%;
+	left: 77%;
+}
+
+
+
+.parks{
 	width: 10px;
 	height: 10px;
 	border: 2px solid black;
+	position:absolute;
 }
-
-#yosemite:hover{
-	width: 40px;
-	height: 40px;
-	transition: 2s;
-}
-
-
-
 
 .parks:hover{
-	width: 20px;
-	height: 20px;
+	border: 2px solid white;
+	transition: 1s;
+
 }
 
 
-
+#text{
+	position: absolute;
+	top: 300px;
+}
 
 
 
@@ -87,16 +117,29 @@ font-family: 'Stick No Bills', sans-serif;
 <br>
 <div id="map">
 	
-<a href="https://en.wikipedia.org/wiki/Yosemite_National_Park"><div class=parks id="yosemite"></div></a>
+<a href="https://en.wikipedia.org/wiki/Yosemite_National_Park"><div class="parks" id="yosemite"></div></a>
+<a href="https://en.wikipedia.org/wiki/Yellowstone_National_Park"><div class="parks" id="yellowstone"></div></a>
+<a href="https://en.wikipedia.org/wiki/Zion_National_Park"><div class="parks" id="zion"></div></a>
+<a href="https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)"><div class="parks" id="glacier"></div></a>
+<a href="https://en.wikipedia.org/wiki/Grand_Canyon"><div class="parks" id="canyon"></div></a>
+<a href="https://en.wikipedia.org/wiki/Everglades_National_Park"><div class="parks" id="everglades"></div></a>
+<center><div id="text"></div></center>
 
-</div>
+<script type="text/javascript">
+	
+	var yosemite = document.getElementById('yosemite');
+	var text = document.getElementById('text');
+
+	yosemite.addEventListener("mouseenter", function(){
+		text.innerText = "Yosemite National Park";
+	} )
+	
+	yosemite.addEventListener("mouseleave", function(){
+		text.innerText = "";
+	})
 
 
-
-
-
-
-
+</script>
 
 
 

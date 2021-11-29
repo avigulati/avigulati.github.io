@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<head>
+	
+<style type="text/css">
+	
+	body{
+		background-color: pink;
+
+	}
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+<script type="text/javascript">
+	
+	document.addEventListener("keypress", function(event){
+
+		var x = document.createElement("div");
+		document.body.appendChild(x)
+
+		x.style.width = "200px";
+		x.style.height = "200px";
+		x.style.backgroundSize = "cover";
+		x.style.backgroundPosition = "center";
+		x.style.display = "inline-block";
+
+		if(event.key == "1")
+			x.style.backgroundImage = "url(nobel.png)";
+	})
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
