@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		body{
+			background-color: lightpink;
+		}
+#candycane{
+			background-image: url(candycane.png);
+		}
+#star{
+			background-image: url(star.png);
+		}
+#golf{
+			background-image: url(golf.png);
+		}
+#music{
+			background-image: url(music.png);
+		}
+#city{
+			background-image: url(city.png);
+		}
+#pic{
+			background-image: url(bro.png);
+		}
+#tree{
+			background-image: url(tree.png);
+			width: 350px;
+			height: 500px;
+			background-size: 95%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+
+
+.ornament{
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+}
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+<div class="ornament" id="candycane"></div>
+<div class="ornament" id="star"></div>
+<div class="ornament" id="golf"></div>
+<div class="ornament" id="music"></div>
+<div class="ornament" id="city"></div>
+<div class="ornament" id="pic"></div>
+<div id="tree"></div>
+
+<script type="text/javascript">
+	
+function makeOrnament(){
+var ornament = document.createElement("div")
+ ornament.style.width = "100px";
+        ornament.style.height = "100px";
+        ornament.style.position = "absolute";
+        ornament.style.backgroundImage = "url("ornament.style.backgroundImage")";
+        ornament.style.backgroundSize = "cover";
+ornament.classList.add('ornament');
+tree.addEventListener("mousemove", function(event){
+	console.log(event)
+});
+
+tree.appendChild(ornament)
+
+
+
+};
+
+candycane.addEventListener("click", function() {
+	ornament.style.backgroundImage = "candycane.png"
+})
+
+tree.addEventListener("click", makeOrnament);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
