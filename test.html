@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .background{
+        	left:1000px;
+        	top:800px;
+/*        	background-color:red;
+*/        	background-size:contain;
+			width:100px;
+			height:100px;
+			background-image:url(circle.png);
+			transition:.5s;
+			margin:10px;
+			background-position:center;
+			background-repeat: no-repeat;
+			position:absolute;
+
+
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<audio id="sound" src="pew.wav"> </audio>
+
+
+
+
+
+
+    <p>viruses gone:</p><input id="input"></input>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    	var pew = document.getElementById('sound');
+    var input = document.getElementById('input');
+        var x = 0;
+
+    function createCircle() {
+        var circle = document.createElement('div');
+        document.body.appendChild(circle);
+        circle.classList.add("background");
+
+        function changePosition() {
+            circle.style.left = 1000 * Math.random() + "px";
+            circle.style.top = 1000 * Math.random() + "px";
+
+
+        };
+
+
+        circle.addEventListener("click", function() {
+            console.log("hi");
+            x = x + 1;
+            input.value = x;
+            circle.classList.remove("background");
+            pew.play()
+
+
+        })
+
+        setInterval(changePosition, 2000)
+    };
+
+
+    setInterval(createCircle, 1000);
+
+
+    </script>
+</body>
+
+</html>
